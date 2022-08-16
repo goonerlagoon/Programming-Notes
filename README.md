@@ -31,15 +31,19 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 
 * Form of an anonymous function:
 
-  **function myFunction() {
+  ```
+  function myFunction() {
      alert('hello');
-  }**
+  }
+  ```
  
   turns into: 
   
-  **(function () {
+  ```
+  (function () {
       alert('hello');
-  })**
+  })
+  ```
   
   i.e. drops the function name, and encloses the function definition in parentheses
   
@@ -47,10 +51,36 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 
 * These are another form of anonymous functions:
 
-                                                        These are all similar
-
-  **function myFunction() {                            () => {                                 () => alert('hello');
-     alert('hello');                     --->            alert('hello');       --->    
-  }                                                    }**
+  ```
+  function myFunction() {
+     alert('hello');    
+  }
+  ```
+  
+  which is similar to: 
+  
+  ```
+  () => {
+  alert('hello'); 
+  }
+  ```
+  
+  which is similar to
+  
+  `() => alert('hello');`
  
+ * If the function has one parameter, then:
 
+     ```
+     function favoriteAnimal(animal) {
+     console.log(animal + " is my favorite animal!")
+   }
+     ```
+     
+    is the same (anonymously) as:
+    
+    `(animal) => console.log(animal + " is my favorite animal!")`
+    
+    and we can go further by dropping the parentheses around the parameter:
+    
+    `animal => console.log(animal + " is my favorite animal!")`
