@@ -91,8 +91,8 @@ So the code a && b || c && d is essentially the same as if the && expressions we
   function doubleItem(item) {
    return item * 2;
   }
- ```
-
-   in arrow form:
-
-  `(item) => item * 2`
+  ```
+ 
+    in arrow form:
+ 
+   `(item) => item * 2`
