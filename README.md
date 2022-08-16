@@ -32,16 +32,25 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 * Form of an anonymous function:
 
   **function myFunction() {
-  alert('hello');
+     alert('hello');
   }**
  
   turns into: 
   
   **(function () {
-    alert('hello');
+      alert('hello');
   })**
   
   i.e. drops the function name, and encloses the function definition in parentheses
   
-* 
+### Arrow Functions
+
+* These are another form of anonymous functions:
+
+                                                        These are all similar
+
+  **function myFunction() {                            () => {                                 () => alert('hello');
+     alert('hello');                     --->            alert('hello');       --->    
+  }                                                    }**
+ 
 
