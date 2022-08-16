@@ -84,3 +84,15 @@ So the code a && b || c && d is essentially the same as if the && expressions we
     and we can go further by dropping the parentheses around the parameter:
     
     `animal => console.log(animal + " is my favorite animal!")`
+    
+* Finally, if your function needs to return a value, and contains only one line, you can also omit the return statement:
+
+  ```
+  function doubleItem(item) {
+   return item * 2;
+  }
+ ```
+
+   in arrow form:
+
+  `(item) => item * 2`
