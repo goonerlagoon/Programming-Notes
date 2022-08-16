@@ -1,2 +1,4 @@
 # Programming-Notes
-notes to reference as i learn programming and the concepts within
+notes to reference now and in the future as i learn programming and the concepts around it
+
+# JavaScript
