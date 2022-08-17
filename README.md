@@ -96,3 +96,16 @@ So the code a && b || c && d is essentially the same as if the && expressions we
     in arrow form:
  
    `(item) => item * 2`
+   
+### Function Expressions
+
+ ```
+ let sayHi = function() {
+  alert( "Hello" );
+};
+```
+
+The above says: create the function, and assign it to the variable "sayHi". 
+Note the semicolon at the end, at the function expression is still part of an assignment statement
+
+`alert( sayHi ); // shows the function code`
