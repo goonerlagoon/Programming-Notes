@@ -133,7 +133,7 @@ Note the semicolon at the end, at the function expression is still part of an as
 
 * Naming things:
   - always use camelCase
-  - variables should be nouns or adjectives. Examples:
+  - _variables_ should be **nouns** or **adjectives**. _Functions_ should be **verbs**. Examples:
     ```
     const numberOfThings = 10;
     const myName = "Thor";
