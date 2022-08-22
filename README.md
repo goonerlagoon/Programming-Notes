@@ -24,7 +24,7 @@ So the code a && b || c && d is essentially the same as if the && expressions we
    Evaluates operands from left to right.
    For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
    
-* The number 0, an empty string "", null, undefined, and NaN are all falsy values. Everything else is truthy.
+* The number 0, an empty string "", null, undefined, and NaN are all **falsy** values. Everything else is **truthy**.
 * Getting started with DevTools: https://developer.chrome.com/docs/devtools/
 
 ## Functions
