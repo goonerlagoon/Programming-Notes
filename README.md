@@ -139,5 +139,14 @@ Note the semicolon at the end, at the function expression is still part of an as
     const myName = "Thor";
     const selected = true;
     ```
+   
+## Node.js
 
+Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
 
+# Miscellaneous
+
+* '--' as in `ls --all` usually denotes the long version of a switch/parameter.
+  `-` as in `ls -a` denotes the short version of a switch parameter.
+  
+  Commands usually have one or both
