@@ -109,3 +109,19 @@ The above says: create the function, and assign it to the variable "sayHi".
 Note the semicolon at the end, at the function expression is still part of an assignment statement
 
 `alert( sayHi ); // shows the function code`
+
+## Error Handling
+
+<img width="620" alt="stack-trace" src="https://user-images.githubusercontent.com/92711276/185812484-5de6bd9b-b1fa-4eac-bfde-c0c622f5fd28.png">
+
+* The stack trace above tells us that:
+
+    1) c is not defined in scope of add(), which is declared on line 5
+    2) add() was called by print(), which was declared on line 9
+    3) print() itself was called on line 12.
+
+## Clean Code: Rules of Thumb
+
+* Indentation: Stay consistent. If you start with 2 space indents, keep it consistent all throughout. Same for 4
+
+
