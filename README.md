@@ -1,5 +1,5 @@
 # Programming-Notes
-notes to reference now and in the future as i learn programming and the concepts around it
+notes to reference as i learn programming and the concepts around it
 
 # JavaScript (JS)
 * When comparing values of different types, JS converts the values to numbers first
