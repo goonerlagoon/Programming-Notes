@@ -122,6 +122,22 @@ Note the semicolon at the end, at the function expression is still part of an as
 
 ## Clean Code: Rules of Thumb
 
-* Indentation: Stay consistent. If you start with 2 space indents, keep it consistent all throughout. Same for 4
+* Indentation: Stay consistent. If you start with 2 space indents, keep it consistent all throughout.
+* Semicolons: Always add them. Period.
+* Line length: 
+   - Try to break each line at around **80** characters.
+   - Also try to break after an **operator** or **comma**
+   - Then, there are a few ways to format continuation lines. For example:
+     * indent continuation lines by one level
+     * vertically align continuation lines with the first variable
+
+* Naming things:
+  - always use camelCase
+  - variables should be nouns or adjectives. Examples:
+    ```
+    const numberOfThings = 10;
+    const myName = "Thor";
+    const selected = true;
+    ```
 
 
