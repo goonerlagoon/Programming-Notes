@@ -188,10 +188,23 @@ print();
 HTML is converted to the DOM when parsed by the browser. The nodes of the DOM are objects, with properties and methods.
 
 * Query Selectors
+  - **element.querySelector(selector)** returns a reference to the first match of _selector_
+  - **element.querySelectorAll(selectors)** returns a “nodelist” containing references to all of the matches of the _selectors_
+     _note that when using **querySelectorAll**, the return value is NOT an array. It looks like an array, and it somewhat acts like an array, but it’s            really a “nodelist”. The big distinction is that several array methods are missing from nodelists._ 
+     
+     This nodelist can be converted to an array using Array.from() or the spread operator.
+     
+### Element Creation
+        
+`document.createElement(tagName, [options])` creates a new element of tag type `tagName. [options]` in this case means you can add some optional parameters to the function.
 
-element.querySelector(selector) returns a reference to the first match of selector
-    
-    
+`const div = document.createElement('div');`
+
+this function does not put your new element into the DOM. it's saved into memory so you can further make adjustments until you're ready to finally insert into the DOM with _other_ functions like:
+
+    * **parentNode.appendChild(childNode)** - which appends _childNode_ as the last child of _parentNode_
+    * **parentNode.insertBefore(newNode, referenceNode)** - which inserts _newNode_ into _parentNode_ before _referenceNode_
+
 
 
 
