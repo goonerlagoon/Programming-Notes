@@ -157,7 +157,45 @@ print();
     
 ## DOM Manipulation and Events 
 
-* The DOM is a tree-like representation of the elements on a page
+* The DOM is a tree-like representation of the elements on a page. Each element is a "node", with nodes on the same level considered "siblings" of each other.
+
+### Targeting Nodes with Selectors
+
+* When working with the DOM, you use “selectors” to target the nodes you want to work with. You can use a combination of CSS-style selectors and relationship properties to target the nodes you want.
+
+`<div class="display"></div>` is a “child” of `<div id="container"></div>` and a sibling to `<div class="controls"></div>`. 
+
+`<div id="container"></div>` is a parent, with its children on the next level, each on their own “branch”.
+
+![html snippet](https://user-images.githubusercontent.com/92711276/186530786-4ffcf735-f723-4f0c-8c7b-b5cc7d941ce7.png)
+
+- CSS-style selectors:
+
+  * div.display
+  * .display
+  * #container > .display
+  * div#container > div.display
+  
+![js snippet](https://user-images.githubusercontent.com/92711276/186531765-02711d0f-1f64-4032-aa56-d7f4e9205d77.png)
+
+- Relational selectors:
+
+  * container.firstElementChild
+  * controls.previousElementSibling
+
+### Targeting Nodes with Selectors  
+
+HTML is converted to the DOM when parsed by the browser. The nodes of the DOM are objects, with properties and methods.
+
+* Query Selectors
+
+element.querySelector(selector) returns a reference to the first match of selector
+    
+    
+
+
+
+
 
 ![dom-tree](https://user-images.githubusercontent.com/92711276/186529303-1d3afba3-c13a-48b1-b0cb-225ba633e305.png)
 
