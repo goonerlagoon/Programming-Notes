@@ -154,7 +154,13 @@ print();
     const myName = "Thor";
     const selected = true;
     ```
-   
+    
+## DOM Manipulation and Events 
+
+* The DOM is a tree-like representation of the elements on a page
+
+![dom-tree](https://user-images.githubusercontent.com/92711276/186529303-1d3afba3-c13a-48b1-b0cb-225ba633e305.png)
+
 ## Node.js
 
 Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
