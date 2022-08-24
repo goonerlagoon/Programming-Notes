@@ -207,10 +207,19 @@ this function does not put your new element into the DOM. it's saved into memory
 
 **Keep in mind:** JavaScript **DOES NOT** alter your HTML. It alters the DOM - your HTML file will look the same, but the Javascript changes what the browser renders.
 
+JavaScript, for the most part, is run whenever the JS file is run, or when the script tag is encountered in the HTML. 
 
+If included at the top of your file, many of these DOM manipulation methods will not work because the JS code is being run **before** the nodes are created in the DOM. 
 
+The simplest way to fix this is to include your JavaScript at the bottom of your HTML file so that it gets run after the DOM nodes are parsed and created.
 
+_Alternatively_, you can link the JavaScript file in the `<head>` of the HTML document. The `<script>` tag with the `src` attribute containing the path to the JS file can be used, alongside the `defer` keyword to load the file after the HTML is parsed, as such:
 
+```
+<head>
+  <script src="js-file.js" defer></script>
+</head>
+```
 
 ![dom-tree](https://user-images.githubusercontent.com/92711276/186529303-1d3afba3-c13a-48b1-b0cb-225ba633e305.png)
 
