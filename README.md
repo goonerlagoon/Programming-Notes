@@ -112,6 +112,21 @@ Note the semicolon at the end, at the function expression is still part of an as
 
 ## Error Handling
 
+```
+const a = 5;
+const b = 10;
+
+function add() {
+  return c;
+}
+
+function print() {
+  add();
+}
+
+print();
+```
+
 <img width="620" alt="stack-trace" src="https://user-images.githubusercontent.com/92711276/185812484-5de6bd9b-b1fa-4eac-bfde-c0c622f5fd28.png">
 
 * The stack trace above tells us that:
