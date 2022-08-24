@@ -202,8 +202,10 @@ HTML is converted to the DOM when parsed by the browser. The nodes of the DOM ar
 
 this function does not put your new element into the DOM. it's saved into memory so you can further make adjustments until you're ready to finally insert into the DOM with _other_ functions like:
 
-    * **parentNode.appendChild(childNode)** - which appends _childNode_ as the last child of _parentNode_
-    * **parentNode.insertBefore(newNode, referenceNode)** - which inserts _newNode_ into _parentNode_ before _referenceNode_
+ * **parentNode.appendChild(childNode)** - which appends _childNode_ as the last child of _parentNode_
+ * **parentNode.insertBefore(newNode, referenceNode)** - which inserts _newNode_ into _parentNode_ before _referenceNode_
+
+**Keep in mind:** JavaScript **DOES NOT** alter your HTML. It alters the DOM - your HTML file will look the same, but the Javascript changes what the browser renders.
 
 
 
