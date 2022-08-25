@@ -159,6 +159,8 @@ print();
 
 * The DOM is a tree-like representation of the elements on a page. Each element is a "node", with nodes on the same level considered "siblings" of each other.
 
+![dom-tree](https://user-images.githubusercontent.com/92711276/186529303-1d3afba3-c13a-48b1-b0cb-225ba633e305.png)
+
 ### Targeting Nodes with Selectors
 
 * When working with the DOM, you use “selectors” to target the nodes you want to work with. You can use a combination of CSS-style selectors and relationship properties to target the nodes you want.
@@ -220,8 +222,6 @@ _Alternatively_, you can link the JavaScript file in the `<head>` of the HTML do
   <script src="js-file.js" defer></script>
 </head>
 ```
-
-![dom-tree](https://user-images.githubusercontent.com/92711276/186529303-1d3afba3-c13a-48b1-b0cb-225ba633e305.png)
 
 ## Node.js
 
