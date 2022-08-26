@@ -228,7 +228,7 @@ _Alternatively_, you can link the JavaScript file in the `<head>` of the HTML do
 Events in JS are exactly what they sound like: an action that happens to an element(s) on a page or in the browser environment.
 Examples include "clicks", "mouseovers", "keypresses", browser reloading etc. 
 
-Javascript listens for and reacts to these events, and there are three primary ways to go about this:
+Javascript listens for these actions and reacts based on the "event listeners" set on each element. There are three primary ways to go about adding event listeners:
 
  * you can attach functions’ attributes directly on your HTML elements
  ![image](https://user-images.githubusercontent.com/92711276/186788358-66b95d5b-9d48-42ee-bd44-f8406752291d.png)
@@ -240,6 +240,17 @@ Javascript listens for and reacts to these events, and there are three primary w
  * you can attach event listeners to the nodes in your JavaScript
  ![image](https://user-images.githubusercontent.com/92711276/186788572-1290d221-afe6-4795-b76a-cce8b0c179a5.png)
  ![image](https://user-images.githubusercontent.com/92711276/186788599-98ae463c-4129-442b-8c5c-e194e6d02c1f.png)
+ 
+### Example
+
+Let's disect this code block line-by-line in plain English to cement whats happening.
+
+```
+const element = document.querySelector("#Test"); // select the element with the ID "#Test" on the page (document), and attach it to the immutable                                                  // variable 'element'. This variable is stored in memory and not added to the DOM.
+console.log(event.target.value);
+  // `event` is passed into the callback from the `.addEventListener` function when it receives a 'click' event.
+});
+```
 
 
 
