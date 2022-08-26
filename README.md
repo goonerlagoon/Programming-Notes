@@ -230,29 +230,20 @@ Examples include "clicks", "mouseovers", "keypresses", browser reloading etc.
 
 Javascript listens for these actions and reacts based on the "event listeners" set on each element. There are three primary ways to go about adding event listeners:
 
- * you can attach functions’ attributes directly on your HTML elements
+ * **you can attach functions’ attributes directly on your HTML elements**
+ 
  ![image](https://user-images.githubusercontent.com/92711276/186788358-66b95d5b-9d48-42ee-bd44-f8406752291d.png)
  
- * you can set the “on_event_” property on the DOM object in your JavaScript
+ * **you can set the “on_event_” property on the DOM object in your JavaScript**
+ 
  ![image](https://user-images.githubusercontent.com/92711276/186788378-1613d34d-8c82-45ab-aeca-19e8bf073aa1.png)
-  ![image](https://user-images.githubusercontent.com/92711276/186788322-3ed12553-da2c-4cb2-89a0-8ed316b35030.png)
+ ![image](https://user-images.githubusercontent.com/92711276/186788322-3ed12553-da2c-4cb2-89a0-8ed316b35030.png)
 
- * you can attach event listeners to the nodes in your JavaScript
+ * **you can attach event listeners to the nodes in your JavaScript**
+ 
  ![image](https://user-images.githubusercontent.com/92711276/186788572-1290d221-afe6-4795-b76a-cce8b0c179a5.png)
  ![image](https://user-images.githubusercontent.com/92711276/186788599-98ae463c-4129-442b-8c5c-e194e6d02c1f.png)
  
-### Example
-
-Let's disect this code block line-by-line in plain English to cement whats happening.
-
-```
-const element = document.querySelector("#Test"); // select the element with the ID "#Test" on the page (document), and attach it to the immutable                                                  // variable 'element'. This variable is stored in memory and not added to the DOM.
-console.log(event.target.value);
-  // `event` is passed into the callback from the `.addEventListener` function when it receives a 'click' event.
-});
-```
-
-
 
 ## Node.js
 
