@@ -246,7 +246,7 @@ Javascript listens for these actions and reacts based on the "event listeners" s
 
 ## Objects
 
-An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything.
+An object can be created with figure brackets {…} with an optional list of properties. A **property** is a “key: value” pair, where key is a _string_ (also called a “property name”), and value can be anything.
 
 ## Node.js
 
