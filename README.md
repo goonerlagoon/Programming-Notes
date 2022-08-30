@@ -198,7 +198,7 @@ HTML is converted to the DOM when parsed by the browser. The nodes of the DOM ar
      
 ### Element Creation
         
-`document.createElement(tagName, [options])` creates a new element of tag type `tagName. [options]` in this case means you can add some optional parameters to the function.
+`document.createElement(tagName, [options])` creates a new element of tag type `tagName`. `[options]` in this case means you can add some optional parameters to the function.
 
 `const div = document.createElement('div');`
 
