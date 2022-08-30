@@ -252,6 +252,34 @@ An object can be created with figure brackets {…} with an optional list of pro
 
 Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
 
+# Back-End Web Architecture
+
+## Mapping out a Request
+
+Let's use an example of 'Alice' shopping.
+
+1. Alice is shopping on SuperCoolShop.com. She clicks on a picture of a cover for her smartphone, and that click event makes a GET request to http://www.SuperCoolShop.com/products/66432.
+
+Remember, GET describes the kind of request (the client is just asking for data, not changing anything). The URI (uniform resource identifier) /products/66432 specifies that the client is looking for more information about a product, and that product, has an id of 66432.
+
+SuperCoolShop has an huge number of products, and many different categories for filtering through them, so the actual URI would be more complicated than this. But this is the general principle for how requests and resource identifiers work.
+
+2. Alice’s request travels across the internet to one of SuperCoolShop’s servers. This is one of the slower steps in the process, because the request cannot go faster than the speed of light, and it might have a long distance to travel. For this reason, major websites with users all over the world will have many different servers, and they will direct users to the server that is closest to them!
+
+3. The server, which is actively listening for requests from all users, receives Alice’s request!
+
+4. Event listeners that match this request (the HTTP verb: GET, and the URI: /products/66432) are triggered. The code that runs on the server between the request and the response is called middleware.
+
+5. In processing the request, the server code makes a database query to get more information about this smartphone case. The database contains all of the other information that Alice wants to know about this smartphone case: the name of the product, the price of the product, a few product reviews, and a string that will provide a path to the image of the product.
+
+6. The database query is executed, and the database sends the requested data back to the server. It’s worth noting that database queries are one of the slower steps in this process. Reading and writing from static memory is fairly slow, and the database might be on a different machine than the original server. This query itself might have to go across the internet!
+
+7. The server receives the data that it needs from the database, and it is now ready to construct and send its response back to the client. This response body has all of the information needed by the browser to show Alice more details (price, reviews, size, etc) about the phone case she’s interested in. The response header will contain an HTTP status code 200 to indicate that the request has succeeded.
+
+8. The response travels across the internet, back to Alice’s computer.
+
+9. Alice’s browser receives the response and uses that information to create and render the view that Alice ultimately sees!
+
 # Miscellaneous
 
 * '--' as in `ls --all` usually denotes the long version of a switch/parameter.
