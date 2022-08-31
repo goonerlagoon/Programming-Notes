@@ -272,6 +272,10 @@ const me = Object.create(person); // (/)
 ```
 (/) this line says: create a new object, store it in the variable `me`, then set `me.__proto__` to `person`
 
+### Function Protoypes
+
+![prototypes](https://user-images.githubusercontent.com/92711276/187792892-d50f4463-bd73-4b98-ba12-58605cf2d87f.png)
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
