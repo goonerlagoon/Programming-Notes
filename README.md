@@ -256,7 +256,20 @@ Node.js is a JavaScript runtime environment that allows you to run JavaScript ou
 
 The prototype field of an object (`__proto__`) points to the object it inherits from. Or...the object that is its **prototype**.
 
-We find the prototype of an object with the following method: `Object.getPrototypeOf()`
+We find the prototype of an object with the following method: `Object.getPrototypeOf(object)`
+
+The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object. 
+
+```
+const person = {
+  isHuman: false,
+  printIntroduction: function() {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+const me = Object.create(person); // this line says: create a new object, and store in `const me`, then set `me.__proto__` to `person`
+```
 
 # Back-End Web Architecture
 
