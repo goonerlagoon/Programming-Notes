@@ -276,6 +276,14 @@ const me = Object.create(person); // (/)
 
 ![prototypes](https://user-images.githubusercontent.com/92711276/187792892-d50f4463-bd73-4b98-ba12-58605cf2d87f.png)
 
+This figure shows that every object has a prototype. Constructor function Foo also has its own `__proto__` which is `Function.prototype`.
+
+So Foo is being used as a template to build objects called from it, i.e. `var Foolet = new Foo()`, while at the same, `Foo` itself uses Function.prototype as its template to build itself. *DEEP BREATH* 
+
+So when Foo is declared for the first time, a property is created called `prototype` that points to the template that Foolet uses to build itself. So `Foolet.__proto__ === Foo.prototype`.
+
+and which in turn also references via its __proto__ property again to the Object.prototype. Thus, repeat, Foo.prototype is just an explicit property of Foo which refers to the prototype of b and c objects.
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
