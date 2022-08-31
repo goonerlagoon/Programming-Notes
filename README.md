@@ -254,7 +254,7 @@ Node.js is a JavaScript runtime environment that allows you to run JavaScript ou
 
 ## Prototypes
 
-The prototype field of an object (__proto__) points to the object it inherits from. Or...the object that is its **prototype**.
+The prototype field of an object (`__proto__`) points to the object it inherits from. Or...the object that is its **prototype**.
 
 We find the prototype of an object with the following method: `Object.getPrototypeOf()`
 
