@@ -6,7 +6,7 @@ notes to reference as i learn programming and the concepts around it
 * **_null_** is its own data type and intentionally sets a value to empty. **_undefined_** is also its own type and is the default initial value for declared variables that havent been assigned anything yet. generally not good practice 
 * operands of different types are converted to numbers by the equality operator ==. An empty string, just like false, becomes a zero. Ex: alert( '' == false ); // true
 * But alert( '' === false ); // false because '===' is strict, instead of testing for equivalence. so it reads as "is 0 the **exact same** as false"
-* When doing comparisons betweem strings, JS goes character by character.
+* When doing comparisons between strings, JS goes character by character.
  
   Eg. 'glow' > 'glee' returns true. why? g == g, move on to next character in both words ('l', which are equal),
   then goes on and compares 'o' and 'e', where it shows 'o' is greater according to the Unicode indexing JS uses
