@@ -252,6 +252,12 @@ An object can be created with figure brackets {…} with an optional list of pro
 
 Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
 
+## Prototypes
+
+The prototype field of an object (__proto__) points to the object it inherits from. Or...the object that is its **prototype**.
+
+We find the prototype of an object with the following method: `Object.getPrototypeOf()`
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
