@@ -268,8 +268,9 @@ const person = {
   }
 };
 
-const me = Object.create(person); // this line says: create a new object, and store in `const me`, then set `me.__proto__` to `person`
+const me = Object.create(person); // (/)
 ```
+(/) this line says: create a new object, store it in the variable `me`, then set `me.__proto__` to `person`
 
 # Back-End Web Architecture
 
