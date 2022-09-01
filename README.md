@@ -243,14 +243,16 @@ Javascript listens for these actions and reacts based on the "event listeners" s
  
  ![image](https://user-images.githubusercontent.com/92711276/186788572-1290d221-afe6-4795-b76a-cce8b0c179a5.png)
  ![image](https://user-images.githubusercontent.com/92711276/186788599-98ae463c-4129-442b-8c5c-e194e6d02c1f.png)
+ 
+## Node.js
+
+Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
+
 
 ## Objects
 
 An object can be created with figure brackets {…} with an optional list of properties. A **property** is a “key: value” pair, where key is a _string_ (also called a “property name”), and value can be anything.
 
-## Node.js
-
-Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
 
 ## Prototypes
 
@@ -270,7 +272,7 @@ const person = {
 
 const me = Object.create(person); // (/)
 ```
-(/) this line says: create a new object, store it in the variable `me`, then set `me.__proto__` to `person`
+(/) this line says: create a new object from `person`, dump it in `me`, then set `me.__proto__` to `person`
 
 ### Function Protoypes
 
