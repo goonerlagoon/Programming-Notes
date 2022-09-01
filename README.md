@@ -282,7 +282,36 @@ So Foo is being used as a template to build objects called from it, i.e. `var Fo
 
 So when Foo is declared for the first time, a property is created called `prototype` that points to the template that Foolet uses to build itself. So `Foolet.__proto__ === Foo.prototype`.
 
-and which in turn also references via its __proto__ property again to the Object.prototype. Thus, repeat, Foo.prototype is just an explicit property of Foo which refers to the prototype of b and c objects.
+Let's use an example I found on StackOverflow (https://stackoverflow.com/a/42002749) to further put things in perspective:
+
+Let's create a function:
+
+ ```
+ function Foo (name) {
+  this.name = name;
+ }
+```
+
+When JavaScript executes this code, it adds the `prototype` property to Foo. 
+
+`prototype` is an object with two properties to it:
+
+   1) `constructor`
+   2) `__proto__`
+   
+So when we do
+
+`Foo.prototype` it returns:
+
+     constructor: Foo  // function definition
+    __proto__: Object
+    
+as you can see `constructor` is nothing but the function `Foo` itself and `__proto__` points to the root level Object of JavaScript.
+
+Now let's say we do something like this:
+
+`var Foolet = new Foo('JavaScript');`
+   
 
 # Back-End Web Architecture
 
