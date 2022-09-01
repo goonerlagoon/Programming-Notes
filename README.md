@@ -311,7 +311,18 @@ as you can see `constructor` is nothing but the function `Foo` itself and `__pro
 Now let's say we do something like this:
 
 `var Foolet = new Foo('JavaScript');`
-   
+
+here's what's happening in step-by-step detail:
+
+ 1) `new Foo('JavaScript')` creates a new object in memory, then points `Foolet` to it
+ 2) `Foolet.__proto__` is created and points to `Foo.prototype`
+ 3) `Foolet` then executes `Foo.constructor()`, using itself as context for `this`, so the `'JavaScript'` argument gets passed on `Foo`'s constructor.
+
+Note if we say `Foo.prototype.car = "BMW"` and do Foolet.car, the output "BMW" appears.
+
+This is because when JavaScript executes this code it searches for the car property on Foolet, doesn't find it, climbs up the prototypal inheritance chain using `__proto__` (which turns out to be `Foolet.__proto__` in this case), finds it on Foo.prototype object and returns it.
+
+Remember, `Foo.prototype` is the blueprint for `Foolet`, so `Foolet` inherits any change that is implemented on `Foo.prototype` (eg. `Foo.prototype.SomeProp = "new prop"`)
 
 # Back-End Web Architecture
 
