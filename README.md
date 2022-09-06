@@ -326,6 +326,37 @@ This is because when JavaScript executes this code it searches for the car prope
 
 Remember, `Foo.prototype` is the blueprint for `Foolet`, so `Foolet` inherits any change that is implemented on `Foo.prototype` (eg. `Foo.prototype.SomeProp = "new prop"`)
 
+## Factory Functions
+
+The factory function pattern is used to set up objects with the help of parameters passed in, then return them. Consider the following:
+
+```
+const personFactory = (name, age) => {
+  const sayHello = () => console.log('hello!');
+  return { name, age, sayHello };
+};
+
+const jeff = personFactory('jeff', 27);
+
+console.log(jeff.name); // 'jeff'
+
+jeff.sayHello(); // calls the function and logs 'hello!'
+```
+
+here, `jeff` is an object returned from the `personFactory` function.
+
+below is same exact thing, but creataed with the constructor pattern instead:
+
+```
+const Person = function(name, age) {
+  this.sayHello = () => console.log('hello!');
+  this.name = name;
+  this.age = age;
+};
+
+const jeff = new Person('jeff', 27);
+```
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
