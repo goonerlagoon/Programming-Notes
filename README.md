@@ -105,8 +105,8 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 };
 ```
 
-The above says: create the function, and assign it to the variable "sayHi". 
-Note the semicolon at the end, at the function expression is still part of an assignment statement
+The above is a _function express_ that's assigned to the variable "sayHi". 
+Note the semicolon at the end, as the function expression is still part of an assignment statement
 
 `alert( sayHi ); // shows the function code`
 
