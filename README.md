@@ -357,6 +357,29 @@ const Person = function(name, age) {
 const jeff = new Person('jeff', 27);
 ```
 
+### Private Variables and Closure
+
+```
+const counterCreator = () => {
+  let count = 0;
+  return () => {
+    console.log(count);
+    count++;
+  };
+};
+
+const counter = counterCreator();
+
+counter(); // 0
+counter(); // 1
+counter(); // 2
+counter(); // 3
+```
+
+The variable `count` in the function definition above is a **private variable.**  Code outside the scope of the function have no access to it.
+
+However, the function returned _DOES_ have access to `count` variable, as well as anything elsse that would be defined in the function. This is what's called **closure.** The returned function remembers the scope in which it was defined.
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
