@@ -110,6 +110,18 @@ Note the semicolon at the end, as the function expression is still part of an as
 
 `alert( sayHi ); // shows the function code`
 
+
+
+The key thing about JavaScript expressions is that they return values. 
+
+```
+(function() {
+  console.log('hello');
+})
+```
+
+In the snippet above the return value of the expression is the function itself. If we were to log the expression using `console.log()` the function definition would be printed. Therefore, to _immediately invoke_ the returned _function expression_, we could just tack `()`s on to the end and "hello" would be printed. In case it still wasn't obvious, this is what we call an **IIFE**, or **Immediately Invoked Function Expression.**
+
 ## Error Handling
 
 ```
