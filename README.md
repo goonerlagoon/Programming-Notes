@@ -436,6 +436,28 @@ The name is stored in `_name` property, and the access is done via getter and se
 
 _Technically, external code is able to access the name directly by using user._name. But there is a widely known convention that properties starting with an underscore "_" are internal and should not be touched from outside the object._
 
+An example of computed properties:
+
+```
+function User(name, birthday) {
+  this.name = name;
+  this.birthday = birthday;
+
+  // age is calculated from the current date and birthday
+  Object.defineProperty(this, "age", {
+    get() {
+      let todayYear = new Date().getFullYear();
+      return todayYear - this.birthday.getFullYear();
+    }
+  });
+}
+
+let john = new User("John", new Date(1992, 6, 1));
+
+alert( john.birthday ); // birthday is available
+alert( john.age );      // ...as well as the age
+```
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
