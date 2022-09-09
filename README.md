@@ -279,7 +279,7 @@ Node.js is a JavaScript runtime environment that allows you to run JavaScript ou
 An object can be created with figure brackets {…} with an optional list of properties. A **property** is a “key: value” pair, where key is a _string_ (also called a “property name”), and value can be anything.
 
 
-## Prototypes
+### Prototypes
 
 The prototype field of an object (`__proto__`) points to the object it inherits from. Or...the object that is its **prototype**.
 
@@ -299,7 +299,7 @@ const me = Object.create(person); // (/)
 ```
 (/) this line says: create a new object from `person`, dump it in `me`, then set `me.__proto__` to `person`
 
-### Function Protoypes
+#### Function Protoypes
 
 ![prototypes](https://user-images.githubusercontent.com/92711276/187792892-d50f4463-bd73-4b98-ba12-58605cf2d87f.png)
 
@@ -351,7 +351,7 @@ This is because when JavaScript executes this code it searches for the car prope
 
 Remember, `Foo.prototype` is the blueprint for `Foolet`, so `Foolet` inherits any change that is implemented on `Foo.prototype` (eg. `Foo.prototype.SomeProp = "new prop"`)
 
-## Factory Functions
+### Factory Functions
 
 The factory function pattern is used to set up objects with the help of parameters passed in, then return them. Consider the following:
 
@@ -382,7 +382,7 @@ const Person = function(name, age) {
 const jeff = new Person('jeff', 27);
 ```
 
-### Private Variables and Closure
+#### Private Variables and Closure
 
 ```
 const counterCreator = () => {
