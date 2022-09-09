@@ -405,6 +405,37 @@ The variable `count` in the function definition above is a **private variable.**
 
 However, the function returned _DOES_ have access to `count` variable, as well as anything elsse that would be defined in the function. This is what's called **closure.** The returned function remembers the scope in which it was defined.
 
+### Getters and Setters
+
+Getters and Setters are used to get/set virtual properties (properties that are 'computed' from other properties existing already in the object).
+
+Getters and Setters can also be "smart" to filter erroneous values for properties:
+
+```
+let user = {
+  get name() {
+    return this._name;
+  },
+
+  set name(value) {
+    if (value.length < 4) {
+      alert("Name is too short, need at least 4 characters");
+      return;
+    }
+    this._name = value;
+  }
+};
+
+user.name = "Pete";
+alert(user.name); // Pete
+
+user.name = ""; // Name is too short...etc
+```
+
+The name is stored in `_name` property, and the access is done via getter and setter.
+
+_Technically, external code is able to access the name directly by using user._name. But there is a widely known convention that properties starting with an underscore "_" are internal and should not be touched from outside the object._
+
 # Back-End Web Architecture
 
 ## Mapping out a Request
