@@ -156,7 +156,7 @@ var boundGetX = getX.bind(module);
 boundGetX(); // 81
 ```
 
-`.bind()` takes an object and returns a function that binds its context (`this`) to the passed-in object 
+`.bind()` takes an object and returns a function that binds its context (`this`) to the passed-in object.
 
 ## Error Handling
 
@@ -508,6 +508,14 @@ SuperCoolShop has an huge number of products, and many different categories for 
 8. The response travels across the internet, back to Alice’s computer.
 
 9. Alice’s browser receives the response and uses that information to create and render the view that Alice ultimately sees!
+
+# S.O.L.I.D Design Principe
+
+* The **Single** Responsibility Principle - A class should have only _one_ reason to change
+* The Open/Closed Principle
+* The Liskov Substitution Principle
+* The Interface Segregation Principle
+* The Dependency Inversion Principle
 
 # Miscellaneous
 
