@@ -135,6 +135,29 @@ var foo = "foo";
 })(foo);
 ```
 
+### Function Binding
+
+```
+x = 9;
+var module = {
+    x: 81,
+    getX: function () {
+        return this.x;
+    }
+};
+
+module.getX(); // 81
+
+var getX = module.getX;
+getX(); // 9, because in this case, "this" refers to the global object
+
+// create a new function with 'this' bound to module
+var boundGetX = getX.bind(module);
+boundGetX(); // 81
+```
+
+`.bind()` takes an object and returns a function that binds its context (`this`) to the passed-in object 
+
 ## Error Handling
 
 ```
