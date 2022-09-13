@@ -511,11 +511,23 @@ SuperCoolShop has an huge number of products, and many different categories for 
 
 # S.O.L.I.D Design Principe
 
-* The **Single** Responsibility Principle - A class should have only _one_ reason to change
-* The Open/Closed Principle
-* The Liskov Substitution Principle
+* The **Single** Responsibility Principle - A class should have only _one_ reason to change. Example here: https://duncan-mcardle.medium.com/solid-principle-1-single-responsibility-javascript-5d9ce2c6f4a5
+
+* The **Open/Closed** Principle - The open/closed principle says that code should be open for extension, but closed for modification. What this means is that if we want to add additional functionality, we should be able to do so simply by extending the original functionality, without the need to modify it.
+
+* The** Liskov Substitution** Principle - The Liskov substitution principle states that any class should be substitutable for its parent class without unexpected consequences. In others words, if the classes Cat and Dog extend the class Animal, then we would expect all of the functionality held within the Animal class to behave normally for a Cat and Dog object.
+
 * The Interface Segregation Principle
 * The Dependency Inversion Principle
+
+## Object Role Stereotypes
+
+* **Information holder** – an object designed to know certain information and provide that information to other objects.
+* **Structurer** – an object that maintains relationships between objects and information about those relationships.
+* **Service provider** – an object that performs specific work and offers services to others on demand.
+* **Controller** – an object designed to make decisions and control a complex task.
+* **Coordinator** – an object that doesn’t make many decisions but, in a rote or mechanical way, delegates work to other objects.
+* **Interfacer** – an object that transforms information or requests between distinct parts of a system.
 
 # Miscellaneous
 
