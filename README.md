@@ -515,10 +515,36 @@ SuperCoolShop has an huge number of products, and many different categories for 
 
 * The **Open/Closed** Principle - The open/closed principle says that code should be open for extension, but closed for modification. What this means is that if we want to add additional functionality, we should be able to do so simply by extending the original functionality, without the need to modify it.
 
-* The** Liskov Substitution** Principle - The Liskov substitution principle states that any class should be substitutable for its parent class without unexpected consequences. In others words, if the classes Cat and Dog extend the class Animal, then we would expect all of the functionality held within the Animal class to behave normally for a Cat and Dog object.
+* The **Liskov Substitution** Principle - The Liskov substitution principle states that any class should be substitutable for its parent class without unexpected consequences. In others words, if the classes Cat and Dog extend the class Animal, then we would expect all of the functionality held within the Animal class to behave normally for a Cat and Dog object.
 
-* The Interface Segregation Principle
-* The Dependency Inversion Principle
+* The **Interface Segregation** Principle - The interface segregation principle states that an entity should never be forced to implement an interface that contains elements which it will never use. For example, a Penguin should never be forced to implement a Bird interface if that Bird interface includes functionality relating to flying, as penguins (spoiler alert) cannot fly.
+
+Example code:
+```
+class Penguin {}
+
+class Bird {}
+
+const flyer = {
+    fly() {
+        console.log(`Flap flap, I'm flying!`);
+    },
+};
+
+Object.assign(Bird.prototype, flyer);
+
+const bird = new Bird();
+bird.fly(); // Outputs 'Flap flap, I'm flying!'
+
+const penguin = new Penguin();
+penguin.fly(); // 'Error: penguin.fly is not a function'
+```
+
+* The **Dependency Inversion** Principle - The dependency injection principle states that high level code should never depend on low level interfaces, and should instead use abstractions. It’s all about decoupling code. 
+
+Example code here:
+
+https://duncan-mcardle.medium.com/solid-principle-5-dependency-inversion-javascript-7b054685f7cb
 
 ## Object Role Stereotypes
 
