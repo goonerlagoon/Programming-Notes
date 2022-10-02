@@ -292,6 +292,10 @@ Javascript listens for these actions and reacts based on the "event listeners" s
  ![image](https://user-images.githubusercontent.com/92711276/186788572-1290d221-afe6-4795-b76a-cce8b0c179a5.png)
  ![image](https://user-images.githubusercontent.com/92711276/186788599-98ae463c-4129-442b-8c5c-e194e6d02c1f.png)
  
+## Promises
+
+Everything is explained super clearly at https://javascript.info/promise-basics
+ 
 ## Node.js
 
 Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of your web browser. 
