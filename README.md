@@ -565,3 +565,8 @@ https://duncan-mcardle.medium.com/solid-principle-5-dependency-inversion-javascr
   `-` as in `ls -a` denotes the short version of a switch parameter.
   
   Commands usually have one or both
+  
+# Networking
+
+![TypeURLInAddressBar](https://user-images.githubusercontent.com/92711276/196860787-ea770fc1-ceeb-43f1-a173-80d662c86366.jpg)
+
