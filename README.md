@@ -566,6 +566,8 @@ https://duncan-mcardle.medium.com/solid-principle-5-dependency-inversion-javascr
   
   Commands usually have one or both
   
+* https://12factor.net/ - The twelve-factor app is a methodology for building software-as-a-service apps that abide by a strict set of guidelines
+  
 # Networking
 
 ![TypeURLInAddressBar](https://user-images.githubusercontent.com/92711276/196860787-ea770fc1-ceeb-43f1-a173-80d662c86366.jpg)
