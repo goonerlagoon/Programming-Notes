@@ -27,6 +27,10 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 * The number 0, an empty string "", null, undefined, and NaN are all **falsy** values. Everything else is **truthy**.
 * Getting started with DevTools: https://developer.chrome.com/docs/devtools/
 
+## React
+
+* _props_ is an empty object that gets passed "key:value", and values are accessed via the key. ex. props.key = value
+
 ## Functions
 
 * Form of an anonymous function:
