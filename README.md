@@ -319,6 +319,10 @@ We set the prototype of an object with the following method: `Object.setPrototyp
 
 ![Screenshot 2022-12-22 at 15-36-23 Prototypal inheritance](https://user-images.githubusercontent.com/92711276/209225739-e85cfd4d-c0ee-43c8-a3f8-fa1659682ae9.png)
 
+![Screenshot 2022-12-22 at 16-11-26 Prototypal inheritance](https://user-images.githubusercontent.com/92711276/209227261-e1c24327-2785-480f-bf51-180882b3a812.png)
+
+![Screenshot 2022-12-22 at 16-11-42 Prototypal inheritance](https://user-images.githubusercontent.com/92711276/209227282-d38b3996-e346-4c12-9eb6-21ed1b2899df.png)
+
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object. 
 
 ```
