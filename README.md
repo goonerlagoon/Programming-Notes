@@ -314,7 +314,10 @@ An object can be created with figure brackets {…} with an optional list of pro
 
 The prototype field of an object (`__proto__`) points to the object it inherits from. Or...the object that is its **prototype**.
 
-We find the prototype of an object with the following method: `Object.getPrototypeOf(object)`
+We get the prototype of an object with the following method: `Object.getPrototypeOf(object)`
+We set the prototype of an object with the following method: `Object.setPrototypeOf(object)`
+
+![Screenshot 2022-12-22 at 15-36-23 Prototypal inheritance](https://user-images.githubusercontent.com/92711276/209225739-e85cfd4d-c0ee-43c8-a3f8-fa1659682ae9.png)
 
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object. 
 
