@@ -30,7 +30,9 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 ## React
 
 * _props_ is an empty object that gets passed "key:value", and values are accessed via the key. ex. `props.key = value`
-* ```
+* Let’s quickly recap what’s going on and the order in which the methods are called:
+
+```
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -61,9 +63,7 @@ class Clock extends React.Component {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Clock />);
-```
-
-Let’s quickly recap what’s going on and the order in which the methods are called:
+``` 
 
 1. When <Clock /> is passed to root.render(), React calls the constructor of the Clock component. Since Clock needs to display the current time, it initializes this.state with an object including the current time. We will later update this state.
 
