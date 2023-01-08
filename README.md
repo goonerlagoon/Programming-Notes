@@ -435,6 +435,8 @@ This is because when JavaScript executes this code it searches for the car prope
 
 Remember, `Foo.prototype` is the blueprint for `Foolet`, so `Foolet` inherits any change that is implemented on `Foo.prototype` (eg. `Foo.prototype.SomeProp = "new prop"`)
 
+So in summary, `Foo.prototype` is a template is for all objects built from `Foo`, whereas `Foo.__proto__` points to the object Foo builds itself from(aka `Object`). So `Foo.__proto__.prototype` for example points to the prototype for all Javascript objects.
+
 ### Factory Functions
 
 The factory function pattern is used to set up objects with the help of parameters passed in, then return them. Consider the following:
