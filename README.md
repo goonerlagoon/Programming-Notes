@@ -27,6 +27,29 @@ So the code a && b || c && d is essentially the same as if the && expressions we
 * The number 0, an empty string "", null, undefined, and NaN are all **falsy** values. Everything else is **truthy**.
 * Getting started with DevTools: https://developer.chrome.com/docs/devtools/
 
+## `this` keyword
+
+The value of this depends on in which context it appears: function, class, or global.
+
+### Function context
+
+Inside a function, the value of this depends on how the function is called. Think about `this` as a hidden parameter of a function.
+
+```
+function getThis() {
+  return this;
+}
+
+const obj1 = { name: "obj1" };
+const obj2 = { name: "obj2" };
+
+obj1.getThis = getThis;
+obj2.getThis = getThis;
+
+console.log(obj1.getThis()); // { name: 'obj1', getThis: [Function: getThis] }
+console.log(obj2.getThis()); // { name: 'obj2', getThis: [Function: getThis] }
+```
+
 ## React
 
 * _props_ is an empty object that gets passed "key:value", and values are accessed via the key. ex. `props.key = value`
