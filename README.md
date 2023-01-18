@@ -33,7 +33,7 @@ The value of this depends on in which context it appears: function, class, or gl
 
 ### Function context
 
-Inside a function, the value of this depends on how the function is called. Think about `this` as a hidden parameter of a function.
+Inside a function, the value of this depends on **how the function is called**. Think about `this` as a hidden parameter of a function.
 
 ```
 function getThis() {
@@ -48,6 +48,33 @@ obj2.getThis = getThis;
 
 console.log(obj1.getThis()); // { name: 'obj1', getThis: [Function: getThis] }
 console.log(obj2.getThis()); // { name: 'obj2', getThis: [Function: getThis] }
+```
+
+The value of this is not the object that has the function as an own property, **but the object that is used to call the function.** You can prove this by calling a method of an object up in the prototype chain.
+
+```
+const obj3 = {
+  __proto__: obj1,
+  name: "obj3",
+};
+
+console.log(obj3.getThis()); // { name: 'obj3' }
+```
+
+The value of this always changes based on how a function is called, even when the function was defined on an object at creation:
+
+```
+const obj4 = {
+  name: "obj4",
+  getThis() {
+    return this;
+  },
+};
+
+const obj5 = { name: "obj5" };
+
+obj5.getThis = obj4.getThis;
+console.log(obj5.getThis()); // { name: 'obj5', getThis: [Function: getThis] }
 ```
 
 ## React
