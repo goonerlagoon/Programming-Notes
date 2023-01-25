@@ -1,6 +1,27 @@
 # Programming-Notes
 notes to reference as i learn programming and the concepts around it
 
+# Java
+
+```int e = 20/6;
+   System.out.println("e is " + e); // e is 3.
+```
+
+In Java this is called truncation. Remainder gets dumped, and only the integer is saved into the variable.
+
+![Implicit Conversion](https://user-images.githubusercontent.com/92711276/214709495-d2a8497a-c6eb-4427-95d2-7c9c2f0499db.PNG)
+
+![Explicit Conversion](https://user-images.githubusercontent.com/92711276/214714303-f3c20fc8-069f-45c5-85ec-3f5f0a650bcf.PNG)
+
+In explicit conversions, if you're assigning the result of an operation between two like types to a variable, the type of the resultant variable will be whate it was declared as. Example:
+
+```
+int a = 20;
+int b = 10;
+double c = a/b;
+System.out.println("c is " + c); // c is 2.0
+```
+
 # JavaScript (JS)
 * When comparing values of different types, JS converts the values to numbers first
 * **_null_** is its own data type and intentionally sets a value to empty. **_undefined_** is also its own type and is the default initial value for declared variables that havent been assigned anything yet. generally not good practice 
