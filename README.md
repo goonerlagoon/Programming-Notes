@@ -22,6 +22,8 @@ double c = a/b;
 System.out.println("c is " + c); // c is 2.0
 ```
 
+* Overriding equals() in classes when inheritance is involved: http://users.csc.calpoly.edu/~gfisher/classes/102/info/howToOverrideEquals.html
+
 # JavaScript (JS)
 * When comparing values of different types, JS converts the values to numbers first
 * **_null_** is its own data type and intentionally sets a value to empty. **_undefined_** is also its own type and is the default initial value for declared variables that havent been assigned anything yet. generally not good practice 
