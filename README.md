@@ -314,6 +314,10 @@ boundGetX(); // 81
 
 `.bind()` takes an object and returns a function that binds its context (`this`) to the passed-in object.
 
+## Variables
+
+![global-vars](https://github.com/user-attachments/assets/755f787f-9e03-4f87-85f0-88ecff356f60)
+
 ## Error Handling
 
 ```
