@@ -1,3 +1,36 @@
+# Table of Contents
+
+- [Programming-Notes](#programming-notes)
+- [Java](#java)
+- [JavaScript (JS)](#javascript-js)
+  - [`this` Keyword](#this-keyword)
+    - [Function Context](#function-context)
+  - [React](#react)
+  - [Functions](#functions)
+    - [Arrow Functions](#arrow-functions)
+    - [Function Expressions](#function-expressions)
+    - [Function Binding](#function-binding)
+  - [Error Handling](#error-handling)
+  - [Clean Code: Rules of Thumb](#clean-code-rules-of-thumb)
+  - [DOM Manipulation and Events](#dom-manipulation-and-events)
+    - [Targeting Nodes with Selectors](#targeting-nodes-with-selectors)
+    - [Element Creation](#element-creation)
+  - [Events](#events)
+  - [Promises](#promises)
+  - [Node.js](#nodejs)
+  - [Objects](#objects)
+    - [Prototypes](#prototypes)
+    - [Factory Functions](#factory-functions)
+    - [Private Variables and Closure](#private-variables-and-closure)
+    - [Getters and Setters](#getters-and-setters)
+- [Back-End Web Architecture](#back-end-web-architecture)
+  - [Mapping Out a Request](#mapping-out-a-request)
+- [S.O.L.I.D Design Principles](#solid-design-principles)
+- [Object Role Stereotypes](#object-role-stereotypes)
+- [Miscellaneous](#miscellaneous)
+- [Networking](#networking)
+
+
 # Programming-Notes
 notes to reference as i learn programming and the concepts around it
 
